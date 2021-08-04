@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import logo from "./logo.svg";
 import "./App.css";
 import "./style.css";
-import Comentarios from "./components/Comentarios";
+import ItemCount from "./components/ItemCount";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <NavBar />
       </div>
       <div>
-        <Comentarios />
+        <ItemCount />
       </div>
     </div>
   );

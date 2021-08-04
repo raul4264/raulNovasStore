@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 
 const comentario = {
   nombre: "Milena",
@@ -22,4 +22,4 @@ class Comentarios extends React.Component {
     );
   }
 }
-export default Comentarios;
+export default Comentarios; ---------------------------------------*/
