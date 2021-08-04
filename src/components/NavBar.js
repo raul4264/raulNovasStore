@@ -1,16 +1,9 @@
 import React from "react";
 import "./navBar.css";
-
-import {
-  Nav,
-  Navbar,
-  NavDropdown,
-  Form,
-  FormControl,
-  Container,
-  Card,
-  Button,
-} from "react-bootstrap";
+import "./CartWidget";
+import ItemListContainer from "./ItemListContainer";
+import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
@@ -27,22 +20,26 @@ const NavBar = () => {
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#link">Link</Nav.Link>
               <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">
+                  ArticuloUno
+                </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                  Another action
+                  ArticuloDos
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">
-                  Something
+                  ArticuloTres
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                  Link Separado
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <CartWidget />
+      <ItemListContainer saludo="Bienvenidos!!..." />
     </div>
   );
 };

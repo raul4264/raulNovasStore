@@ -3,11 +3,7 @@ import NavBar from "./components/NavBar";
 import logo from "./logo.svg";
 import "./App.css";
 import "./style.css";
-
-const comentario = {
-  nombre: "Milena",
-  comentario: "felicidades",
-};
+import Comentarios from "./components/Comentarios";
 
 function App() {
   return (
@@ -18,6 +14,9 @@ function App() {
       </header>{" "}
       <div>
         <NavBar />
+      </div>
+      <div>
+        <Comentarios />
       </div>
     </div>
   );
