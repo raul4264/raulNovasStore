@@ -9,3 +9,19 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+.main{
+    margin: 30px;
+}
+.count{
+    margin: 2vw;
+}
+.bienvenida{
+    margin: 7vw;
+   
+}
+
+
+.navBar h1{
+    color: darkblue;
+    font-size: 4em;
+}

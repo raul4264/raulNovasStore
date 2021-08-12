@@ -1,18 +1,18 @@
 import React from "react";
 import "./navBar.css";
 import "./CartWidget";
-import ItemListContainer from "./ItemListContainer";
+
 import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
 import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return (
-    <div className="">
+    <div className="navBar">
       <Navbar bg="light" expand="lg">
         <Container>
           {/* <a className="links">listado de categorías clickeables</a> */}
           <Navbar.Brand href="#home">
-            <h1>raulNovasStore</h1>
+            <h1>BlueCat.MoviesStore</h1>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -36,10 +36,9 @@ const NavBar = () => {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
+          <CartWidget />
         </Container>
       </Navbar>
-      <CartWidget />
-      <ItemListContainer saludo="Bienvenidos!!..." />
     </div>
   );
 };
